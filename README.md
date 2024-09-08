@@ -4,12 +4,14 @@ My own minimalist Go library that generates uuid's that implement v4, variant 10
 
 Securely uses `crypto/rand` for random number generation.
 
+Using this library instead of typical uuid libraries (that package other uuid versions/features) can reduce a compiled binary size by as much as 7% according to my experiments.
+
 ## Usage
 
 First, get it:
 
 ```bash
-go get -v git.cmcode.dev/cmcode/uuid
+go get -v github.com/charles-m-knox/go-uuid
 ```
 
 Now, in a `main.go` file:
@@ -20,7 +22,7 @@ package main
 import (
     "log"
 
-    uuid "git.cmcode.dev/cmcode/uuid"
+    uuid "github.com/charles-m-knox/go-uuid"
 )
 
 func main() {

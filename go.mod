@@ -1,3 +1,3 @@
-module git.cmcode.dev/cmcode/uuid
+module github.com/charles-m-knox/go-uuid
 
 go 1.22.5
